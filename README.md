@@ -56,14 +56,30 @@ where the values `b_i` are called the **coefficients** or **terms** of the conti
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-utils-continued-fraction
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterContinuedFraction from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@deno/mod.js';
+var iterContinuedFraction = require( '@stdlib/math-iter-utils-continued-fraction' );
 ```
 
 #### iterContinuedFraction( iterator\[, options] )
@@ -71,7 +87,7 @@ import iterContinuedFraction from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-it
 Evaluates the terms of a continued fraction.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 3, 4, 12, 4 ] );
 
@@ -87,7 +103,7 @@ The function supports the following `options`:
 To explicitly cap the maximum number of iterations, set the `iter` option.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 3, 4, 12, 4 ] );
 
@@ -101,7 +117,7 @@ var v = iterContinuedFraction( arr, opts );
 The function terminates continued fraction evaluation once the difference between continued fraction approximations is sufficiently small. The default tolerance is [floating-point epsilon][@stdlib/constants/float64/eps] (`~2.22e-16`). Once an update to a continued fraction approximation is less than or equal to this tolerance, the function terminates evaluation. To adjust the tolerance (e.g., to return a rough approximation), set the `tol` option.
 
 ```javascript
-import iterContinuedFractionSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-continued-fraction@deno/mod.js';
+var iterContinuedFractionSeq = require( '@stdlib/math-iter-sequences-continued-fraction' );
 
 var opts = {
     'tol': 1.0e-7
@@ -138,9 +154,9 @@ var v = iterContinuedFraction( it );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import iterContinuedFractionSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-continued-fraction@deno/mod.js';
-import PI from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi@deno/mod.js';
-import iterContinuedFraction from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@deno/mod.js';
+var iterContinuedFractionSeq = require( '@stdlib/math-iter-sequences-continued-fraction' );
+var PI = require( '@stdlib/constants-float64-pi' );
+var iterContinuedFraction = require( '@stdlib/math-iter-utils-continued-fraction' );
 
 // Create an iterator for returning the list of continued fraction terms:
 var it = iterContinuedFractionSeq( PI );
@@ -181,7 +197,7 @@ console.log( 'Value: %d.', v );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -211,8 +227,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-iter-utils-continued-fraction.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-iter-utils-continued-fraction
 
-[test-image]: https://github.com/stdlib-js/math-iter-utils-continued-fraction/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/math-iter-utils-continued-fraction/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/math-iter-utils-continued-fraction/actions/workflows/test.yml/badge.svg?branch=v0.0.1
+[test-url]: https://github.com/stdlib-js/math-iter-utils-continued-fraction/actions/workflows/test.yml?query=branch:v0.0.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-iter-utils-continued-fraction/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-iter-utils-continued-fraction?branch=main
@@ -243,7 +259,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
-[@stdlib/constants/float64/eps]: https://github.com/stdlib-js/constants-float64-eps/tree/deno
+[@stdlib/constants/float64/eps]: https://github.com/stdlib-js/constants-float64-eps
 
 </section>
 
