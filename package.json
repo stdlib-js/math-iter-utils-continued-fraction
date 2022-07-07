@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-iter-utils-continued-fraction",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Evaluate the terms of a continued fraction.",
   "license": "Apache-2.0",
   "author": {
