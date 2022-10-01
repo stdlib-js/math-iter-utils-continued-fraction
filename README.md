@@ -56,38 +56,30 @@ where the values `b_i` are called the **coefficients** or **terms** of the conti
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-utils-continued-fraction
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterContinuedFraction = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterContinuedFraction = require( 'path/to/vendor/umd/math-iter-utils-continued-fraction/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterContinuedFraction;
-})();
-</script>
+var iterContinuedFraction = require( '@stdlib/math-iter-utils-continued-fraction' );
 ```
 
 #### iterContinuedFraction( iterator\[, options] )
@@ -161,15 +153,10 @@ var v = iterContinuedFraction( it );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-continued-fraction@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var iterContinuedFractionSeq = require( '@stdlib/math-iter-sequences-continued-fraction' );
+var PI = require( '@stdlib/constants-float64-pi' );
+var iterContinuedFraction = require( '@stdlib/math-iter-utils-continued-fraction' );
 
 // Create an iterator for returning the list of continued fraction terms:
 var it = iterContinuedFractionSeq( PI );
@@ -179,11 +166,6 @@ var v = iterContinuedFraction( it );
 // returns <number>
 
 console.log( 'Value: %d.', v );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -277,7 +259,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
-[@stdlib/constants/float64/eps]: https://github.com/stdlib-js/constants-float64-eps/tree/umd
+[@stdlib/constants/float64/eps]: https://github.com/stdlib-js/constants-float64-eps
 
 </section>
 
