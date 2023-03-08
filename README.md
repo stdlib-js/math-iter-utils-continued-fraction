@@ -30,10 +30,14 @@ A **generalized continued fraction** has the form
 
 <!-- <equation class="equation" label="eq:continued_fraction" align="center" raw="x = b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4+\ldots}}}}" alt="Continued fraction"> -->
 
-<div class="equation" align="center" data-raw-text="x = b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4+\ldots}}}}" data-equation="eq:continued_fraction">
+```math
+x = b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4+\ldots}}}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="x = b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4+\ldots}}}}" data-equation="eq:continued_fraction">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d3cef42cbeb8499623814933ed4d906a345cec32/lib/node_modules/@stdlib/math/iter/utils/continued-fraction/docs/img/equation_continued_fraction.svg" alt="Continued fraction">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -41,10 +45,14 @@ If `a_i = 1` for all `i`, the above expression reduces to a **simple continued f
 
 <!-- <equation class="equation" label="eq:simple_continued_fraction" align="center" raw="x = b_0 + \frac{1}{b_1+\frac{1}{b_2+\frac{1}{b_3+\frac{1}{b_4+\ldots}}}}" alt="Simple continued fraction"> -->
 
-<div class="equation" align="center" data-raw-text="x = b_0 + \frac{1}{b_1+\frac{1}{b_2+\frac{1}{b_3+\frac{1}{b_4+\ldots}}}}" data-equation="eq:simple_continued_fraction">
+```math
+x = b_0 + \frac{1}{b_1+\frac{1}{b_2+\frac{1}{b_3+\frac{1}{b_4+\ldots}}}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="x = b_0 + \frac{1}{b_1+\frac{1}{b_2+\frac{1}{b_3+\frac{1}{b_4+\ldots}}}}" data-equation="eq:simple_continued_fraction">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d3cef42cbeb8499623814933ed4d906a345cec32/lib/node_modules/@stdlib/math/iter/utils/continued-fraction/docs/img/equation_simple_continued_fraction.svg" alt="Simple continued fraction">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -56,38 +64,30 @@ where the values `b_i` are called the **coefficients** or **terms** of the conti
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-utils-continued-fraction
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterContinuedFraction = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterContinuedFraction = require( 'path/to/vendor/umd/math-iter-utils-continued-fraction/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterContinuedFraction;
-})();
-</script>
+var iterContinuedFraction = require( '@stdlib/math-iter-utils-continued-fraction' );
 ```
 
 #### iterContinuedFraction( iterator\[, options] )
@@ -161,15 +161,10 @@ var v = iterContinuedFraction( it );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-continued-fraction@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var iterContinuedFractionSeq = require( '@stdlib/math-iter-sequences-continued-fraction' );
+var PI = require( '@stdlib/constants-float64-pi' );
+var iterContinuedFraction = require( '@stdlib/math-iter-utils-continued-fraction' );
 
 // Create an iterator for returning the list of continued fraction terms:
 var it = iterContinuedFractionSeq( PI );
@@ -179,11 +174,6 @@ var v = iterContinuedFraction( it );
 // returns <number>
 
 console.log( 'Value: %d.', v );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -259,7 +249,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -277,7 +267,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
-[@stdlib/constants/float64/eps]: https://github.com/stdlib-js/constants-float64-eps/tree/umd
+[@stdlib/constants/float64/eps]: https://github.com/stdlib-js/constants-float64-eps
 
 </section>
 
