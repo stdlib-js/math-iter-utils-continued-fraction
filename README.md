@@ -203,6 +203,12 @@ console.log( 'Value: %d.', v );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/math-iter/sequences/continued-fraction`][@stdlib/math/iter/sequences/continued-fraction]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a list of all continued fraction terms which can be obtained given the precision of a provided number.</span>
+
 </section>
 
 <!-- /.related -->
@@ -279,6 +285,12 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
 [@stdlib/constants/float64/eps]: https://github.com/stdlib-js/constants-float64-eps
+
+<!-- <related-links> -->
+
+[@stdlib/math/iter/sequences/continued-fraction]: https://github.com/stdlib-js/math-iter-sequences-continued-fraction
+
+<!-- </related-links> -->
 
 </section>
 
