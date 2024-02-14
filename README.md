@@ -82,7 +82,7 @@ where the values `b_i` are called the **coefficients** or **terms** of the conti
 ## Usage
 
 ```javascript
-import iterContinuedFraction from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@deno/mod.js';
+import iterContinuedFraction from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@v0.2.0-deno/mod.js';
 ```
 
 #### iterContinuedFraction( iterator\[, options] )
@@ -159,7 +159,7 @@ var v = iterContinuedFraction( it );
 ```javascript
 import iterContinuedFractionSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-continued-fraction@deno/mod.js';
 import PI from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi@deno/mod.js';
-import iterContinuedFraction from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@deno/mod.js';
+import iterContinuedFraction from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@v0.2.0-deno/mod.js';
 
 // Create an iterator for returning the list of continued fraction terms:
 var it = iterContinuedFractionSeq( PI );
