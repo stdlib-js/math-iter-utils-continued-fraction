@@ -84,7 +84,7 @@ where the values `b_i` are called the **coefficients** or **terms** of the conti
 To use in Observable,
 
 ```javascript
-iterContinuedFraction = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@umd/browser.js' )
+iterContinuedFraction = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@v0.2.2-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -96,7 +96,7 @@ var iterContinuedFraction = require( 'path/to/vendor/umd/math-iter-utils-continu
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@v0.2.2-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -186,7 +186,7 @@ var v = iterContinuedFraction( it );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-continued-fraction@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-utils-continued-fraction@v0.2.2-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
