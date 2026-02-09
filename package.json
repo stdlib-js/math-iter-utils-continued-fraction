@@ -39,7 +39,7 @@
   "dependencies": {
     "@stdlib/assert-has-own-property": "^0.2.3",
     "@stdlib/assert-is-finite": "^0.2.3",
-    "@stdlib/assert-is-iterator-like": "^0.2.2",
+    "@stdlib/assert-is-iterator-like": "^0.2.3",
     "@stdlib/assert-is-nonnegative-integer": "^0.2.3",
     "@stdlib/assert-is-number": "^0.2.3",
     "@stdlib/assert-is-plain-object": "^0.2.3",
@@ -51,14 +51,14 @@
     "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/array-to-iterator": "^0.2.2",
+    "@stdlib/array-to-iterator": "^0.2.3",
     "@stdlib/constants-float64-pi": "^0.2.3",
-    "@stdlib/iter-empty": "^0.2.2",
-    "@stdlib/math-iter-sequences-continued-fraction": "^0.2.2",
+    "@stdlib/iter-empty": "^0.2.3",
+    "@stdlib/math-iter-sequences-continued-fraction": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
+    "@stdlib/bench-harness": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0",
