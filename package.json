@@ -52,6 +52,7 @@
   },
   "devDependencies": {
     "@stdlib/array-to-iterator": "^0.2.3",
+    "@stdlib/assert-is-almost-same-value": "^0.1.1",
     "@stdlib/constants-float64-pi": "^0.2.3",
     "@stdlib/iter-empty": "^0.2.3",
     "@stdlib/math-iter-sequences-continued-fraction": "^0.2.3",
